@@ -23,7 +23,20 @@ function mra_display_meta_box( $post ) {
 
     $terms = get_terms("category");
 
-    $html = '<label id="category-article" for="category-article">';
+    $html = '<label id="display-article" for="display-article">';
+    $html .= 'Display :';
+    $html .= '</label>';
+    $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-on" value="on">';
+    $html .= '<label class="form-check-label" for="display-article-on">On</label>';
+    $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-off" value="off">';
+    $html .= '<label class="form-check-label" for="display-article-off">Off</label>';
+//    if ( get_post_meta( get_the_ID(), 'display-article', true ) == 'on' ) {
+//        $html .= '<input type="checkbox" id="display-article"  name="display-article" checked/>';
+//    } else {
+//        $html .= '<input type="checkbox" id="display-article" name="display-article"/>';
+//    }
+    $html .= '</br>';
+    $html .= '<label id="category-article" for="category-article">';
     $html .= 'Category Article';
     $html .= '</label>';
     $html .= '</br>';
@@ -45,10 +58,10 @@ function mra_save_meta_box_data( $post_id ) {
             $category_title = stripslashes( strip_tags( $_POST['category-title'] ) );
             update_post_meta( $post_id, 'category-title', $category_title );
         }
-        if ( isset( $_POST['display-article'] ) ) {
-            $category_display = stripslashes( strip_tags( $_POST['display-article'] ) );
-            var_dump($category_display); exit;
-            update_post_meta( $post_id, 'display-article', $category_display );
+
+        if ( isset ($_POST['display-article']) ) {
+            $category_display_on = stripslashes( strip_tags( $_POST['display-article'] ) );
+            update_post_meta( $post_id, 'display-article', $category_display_on );
         }
     }
 }

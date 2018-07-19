@@ -7,21 +7,22 @@
  */
 function mra_display_product( $content ) {
     if ( ! is_single () ) {
-        $terms = get_terms("category");
-        foreach ( $terms as $term ) {
-            if ($term->slug == get_post_meta( get_the_ID(), 'category-title', true )) {
-                $id_cat = $term->term_id;
+        if ( get_post_meta( get_the_ID(), 'display-article', true ) == 'on' ) {
+            $terms = get_terms("category");
+            foreach ( $terms as $term ) {
+                if ($term->slug == get_post_meta( get_the_ID(), 'category-title', true )) {
+                    $id_cat = $term->term_id;
+                }
             }
-        }
-        $args = array(
-            'posts_per_page'    => 1,
-            'cat'               => $id_cat,
-        );
-        $posts = get_posts($args);
-        foreach($posts as $post):
-            $post_url = get_permalink($post->ID);
-            $post_img = get_the_post_thumbnail_url($post->ID);
-            $html = <<<EOF
+            $args = array(
+                'posts_per_page'    => 1,
+                'cat'               => $id_cat,
+            );
+            $posts = get_posts($args);
+            foreach($posts as $post):
+                $post_url = get_permalink($post->ID);
+                $post_img = get_the_post_thumbnail_url($post->ID);
+                $html = <<<EOF
             <div class="article-expo">
                 <div class="article-content" style="background-image: url($post_img);">
                     <div class="content-expo">
@@ -37,8 +38,9 @@ function mra_display_product( $content ) {
                 </div>
             </div>
 EOF;
-        endforeach;
-        $content .= $html;
+            endforeach;
+            $content .= $html;
+        }
     }
     return $content;
 }
