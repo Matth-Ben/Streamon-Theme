@@ -1,0 +1,74 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: $SO_White;
+}
+
+body {
+  background-color: $SO_Black;
+  font-family: Comfortaa, sans-serif;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 62px;
+}
+
+h2 {
+  font-family: 'Passion One', cursive;
+  font-size: 42px;
+}
+
+h3 {
+  font-family: 'Passion One', cursive;
+  font-size: 32px;
+}
+
+h4 {
+  font-family: 'Passion One', cursive;
+  font-size: 24px;
+}
+
+h5 {
+  font-family: 'Passion One', cursive;
+  font-size: 14px;
+}
+
+h6 {
+  font-family: 'Passion One', cursive;
+  font-size: 10px;
+}
+
+p, ul, li, td {
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+}
+
+::-moz-selection { background: $SO_Orange_Neon; }
+::selection { background: $SO_Orange_Neon; }
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container-fullwidth {
+  width:100%;
+}
+
+.container-large {
+  width:90%;
+  margin:auto;
+}
+
+.bn-grey {
+  background-color: $SO_Grey;
+}
+
+.bn-grey-dark {
+  background-color: $SO_Grey_Dark;
+}

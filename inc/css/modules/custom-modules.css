@@ -1,0 +1,46 @@
+/* line 1, ../../../sass/modules/_module-recent-article.scss */
+.article-expo {
+  background-color: #383838;
+}
+/* line 3, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .article-content {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 7, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .article-content .content-expo {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0 70px;
+}
+/* line 11, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .article-content .content-expo .post-title {
+  margin-bottom: 0;
+  line-height: 1;
+}
+/* line 14, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .article-content .content-expo .post-title a {
+  color: #1FDAF0;
+  text-transform: uppercase;
+}
+/* line 22, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .article-content .content-expo .post-content {
+  width: 60%;
+  font-size: 16px;
+}
+/* line 28, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .bar-expo {
+  background: #272727;
+}
+/* line 30, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .bar-expo .content-bar-expo {
+  text-align: right;
+  margin: auto;
+  padding: 15px 0;
+  width: 80%;
+}
+/* line 35, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .bar-expo .content-bar-expo p {
+  margin-bottom: 0;
+}

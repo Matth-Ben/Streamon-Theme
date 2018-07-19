@@ -1,0 +1,43 @@
+.article-expo {
+  background-color: $SO_Grey;
+  .article-content {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    .content-expo {
+      width:80%;
+      margin:auto;
+      padding: 50px 0 70px;
+      .post-title {
+        margin-bottom: 0;
+        line-height: 1;
+        a {
+          color: $SO_Blue_Light;
+          text-transform: uppercase;
+        }
+      }
+      .post-date {
+
+      }
+      .post-content {
+        width:60%;
+        font-size: 16px;
+      }
+    }
+  }
+  .bar-expo {
+    background: #272727;
+    .content-bar-expo {
+      text-align: right ;
+      margin:auto;
+      padding: 15px 0;
+      width:80%;
+      p {
+        margin-bottom: 0;
+      }
+      .post-comment-count {
+
+      }
+    }
+  }
+}

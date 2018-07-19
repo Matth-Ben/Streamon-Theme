@@ -1,0 +1,17 @@
+.btn-primary-so {
+  background-color: $SO_Orange_Lite;
+  border-color: $SO_Orange_Lite;
+  &.btn-raised:hover {
+    background-color: hsla(17°, 100%, 60%,.8);
+    border-color: hsla(17°, 100%, 60%,.8);
+  }
+}
+
+.btn-secondary-so {
+  background-color: $SO_Orange_Neon;
+  border-color: $SO_Orange_Neon;
+  &.btn-raised:hover {
+    background-color: hsla(0, 85.7%, 58.8%,.8);
+    border-color: hsla(0, 85.7%, 58.8%,.8);
+  }
+}

@@ -1,0 +1,16 @@
+/*
+ * Theme Name: Stream Theme
+ * URI: http://www.fran6art.com/
+ * Description: Theme for the company Stream On
+ * Version: 0.1
+ * Author: Benoit Matthias
+ * Creation Theme by Benoit Matthias || http://matthiasbenoit.fr/
+ */
+
+@import url('https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Passion+One|Righteous');
+@import "inc/css/custom.css";
+@import "inc/css/modules/custom-modules.css";
+/*.container {*/
+    /*margin-top: 100px;*/
+/*}*/
