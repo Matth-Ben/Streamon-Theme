@@ -17,6 +17,7 @@ Template Name: Projet
             <h1 class="archive_title h2">
                 <?php the_title(); ?>
             </h1>
+            <hr class="title_highlight">
         </div>
     </div>
 
