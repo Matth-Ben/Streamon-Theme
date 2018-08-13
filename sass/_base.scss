@@ -72,3 +72,19 @@ p, ul, li, td {
 .bn-grey-dark {
   background-color: $SO_Grey_Dark;
 }
+
+.page-header {
+
+  display: table-cell;
+  padding: 25px 0;
+
+  .title_highlight {
+
+    background-color: $SO_Orange_Lite;
+    height: 2px;
+    width: 50%;
+    margin: auto 0;
+
+  }
+
+}

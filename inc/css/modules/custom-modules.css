@@ -44,3 +44,36 @@
 .article-expo .bar-expo .content-bar-expo p {
   margin-bottom: 0;
 }
+
+/* line 1, ../../../sass/modules/_module-bloc-contact.scss */
+.bloc-contact {
+  padding: 50px 0;
+}
+/* line 4, ../../../sass/modules/_module-bloc-contact.scss */
+.bloc-contact .content-expo .post-title {
+  display: table;
+  border-bottom: 5px solid #FF6E33;
+}
+/* line 9, ../../../sass/modules/_module-bloc-contact.scss */
+.bloc-contact .content-bar-expo {
+  margin-top: 50px;
+}
+/* line 13, ../../../sass/modules/_module-bloc-contact.scss */
+.bloc-contact .contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+/* line 18, ../../../sass/modules/_module-bloc-contact.scss */
+.bloc-contact .contact-button a {
+  color: #FF6E33;
+  text-decoration: none;
+  border: 1px solid #FF6E33;
+  padding: 15px 30px;
+}
+/* line 24, ../../../sass/modules/_module-bloc-contact.scss */
+.bloc-contact .contact-button a:hover {
+  background-color: #FF6E33;
+  color: #fff;
+}

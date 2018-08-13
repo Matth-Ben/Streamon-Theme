@@ -55,7 +55,7 @@ function bloc_contact_render( $content ) {
     if ( ! is_single () ) {
         $html .= <<<EOF
         <div class="container">
-            <div class="row">
+            <div class="row bloc-contact">
                 <div class="col">
                     <div class="content-expo">
                         <h2 class="post-title">$title_bloc</h2>
@@ -65,7 +65,7 @@ function bloc_contact_render( $content ) {
                     </div>
                 </div>
                 <div class="col-3">
-                    <div>
+                    <div class="contact-button">
                         <a href="$url_button">$title_button</a>
                     </div>
                 </div>

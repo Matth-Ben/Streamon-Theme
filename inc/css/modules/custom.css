@@ -1,0 +1,9 @@
+/* line 15, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .bar-expo {
+  background: #383838;
+  opacity: 0.9;
+}
+/* line 18, ../../../sass/modules/_module-recent-article.scss */
+.article-expo .bar-expo .content-bar-expo {
+  text-align: right;
+}

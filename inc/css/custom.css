@@ -96,6 +96,19 @@ p, ul, li, td {
   background-color: #171717;
 }
 
+/* line 76, ../../sass/_base.scss */
+.page-header {
+  display: table-cell;
+  padding: 25px 0;
+}
+/* line 81, ../../sass/_base.scss */
+.page-header .title_highlight {
+  background-color: #FF6E33;
+  height: 2px;
+  width: 50%;
+  margin: auto 0;
+}
+
 /* line 2, ../../sass/_header.scss */
 .custom-logo-link .custom-logo {
   width: 250px;

@@ -1,0 +1,31 @@
+.bloc-contact {
+  padding: 50px 0;
+  .content-expo {
+    .post-title {
+      display: table;
+      border-bottom: 5px solid $SO_Orange_Lite;
+    }
+  }
+  .content-bar-expo {
+    margin-top:50px;
+  }
+
+  .contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    a {
+      color: $SO_Orange_Lite;
+      text-decoration: none;
+      border: 1px solid $SO_Orange_Lite;
+      padding: 15px 30px;
+      
+      &:hover {
+        background-color: $SO_Orange_Lite;
+        color: #fff;
+      }
+    }
+  }
+
+}
