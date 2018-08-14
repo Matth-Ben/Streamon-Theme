@@ -22,16 +22,15 @@ Template Name: Contact - FAQ
             </h1>
             <hr class="title_highlight">
         </div>
-        <div class="title_question_head" >
-            <p>Une question ? Une recommendation ?</p>
-        </div>
+
+        <?php if ($phrase_contact != "") : ?>
+            <div class="title_question_head" >
+                <p>Une question ? Une recommendation ?</p>
+            </div>
+        <?php endif; ?>
     </div>
 
-    <?php
-
-    the_content();
-
-    ?>
+    <?php the_content(); ?>
 
 </div>
 
