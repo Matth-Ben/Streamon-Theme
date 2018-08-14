@@ -7,14 +7,17 @@
  */
 
 function mra_add_meta_box() {
-    add_meta_box(
-        'metabox_last_article',
-        'Category Article',
-        'mra_display_meta_box',
-        'page',
-        'normal',
-        'high'
-    );
+    global $post;
+    if ('tpl-projet.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+        add_meta_box(
+            'metabox_last_article',
+            'Category Article',
+            'mra_display_meta_box',
+            'page',
+            'normal',
+            'high'
+        );
+    }
 }
 add_action( 'add_meta_boxes', 'mra_add_meta_box' );
 
@@ -26,15 +29,19 @@ function mra_display_meta_box( $post ) {
     $html = '<label id="display-article" for="display-article">';
     $html .= 'Display :';
     $html .= '</label>';
-    $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-on" value="on">';
-    $html .= '<label class="form-check-label" for="display-article-on">On</label>';
-    $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-off" value="off">';
-    $html .= '<label class="form-check-label" for="display-article-off">Off</label>';
-//    if ( get_post_meta( get_the_ID(), 'display-article', true ) == 'on' ) {
-//        $html .= '<input type="checkbox" id="display-article"  name="display-article" checked/>';
-//    } else {
-//        $html .= '<input type="checkbox" id="display-article" name="display-article"/>';
-//    }
+
+    if ( get_post_meta( get_the_ID(), 'display-article', true ) == 'on' ) {
+        $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-on" value="on" checked>';
+        $html .= '<label class="form-check-label" for="display-article-on">On</label>';
+        $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-off" value="off">';
+        $html .= '<label class="form-check-label" for="display-article-off">Off</label>';
+    } else {
+        $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-on" value="on">';
+        $html .= '<label class="form-check-label" for="display-article-on">On</label>';
+        $html .= '<input class="form-check-input" type="radio" name="display-article" id="display-article-off" value="off" checked>';
+        $html .= '<label class="form-check-label" for="display-article-off">Off</label>';
+    }
+
     $html .= '</br>';
     $html .= '<label id="category-article" for="category-article">';
     $html .= 'Category Article';
