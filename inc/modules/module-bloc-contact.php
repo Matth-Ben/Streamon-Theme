@@ -6,6 +6,7 @@
  * Time: 15:35
  */
 class bloc_contact_Metabox {
+
     private $screen = array(
         'page',
     );
@@ -36,15 +37,18 @@ class bloc_contact_Metabox {
         add_action( 'save_post', array( $this, 'save_fields' ) );
     }
     public function add_meta_boxes() {
+        global $post;
         foreach ( $this->screen as $single_screen ) {
-            add_meta_box(
-                'metabox_bloc_contact',
-                __( 'Bloc contact', 'textdomain' ),
-                array( $this, 'meta_box_callback' ),
-                $single_screen,
-                'normal',
-                'low'
-            );
+            if ('tpl-projet.php' == get_post_meta( $post->ID, '_wp_page_template', true ) ) {
+                add_meta_box(
+                    'metabox_bloc_contact',
+                    __('Bloc contact', 'textdomain'),
+                    array($this, 'meta_box_callback'),
+                    $single_screen,
+                    'normal',
+                    'low'
+                );
+            }
         }
     }
     public function meta_box_callback( $post ) {
@@ -52,6 +56,9 @@ class bloc_contact_Metabox {
         $this->field_generator( $post );
     }
     public function field_generator( $post ) {
+
+//        var_dump(get_page_template()); exit;
+
         $output = '';
         foreach ( $this->meta_fields as $meta_field ) {
             $label = '<label for="' . $meta_field['id'] . '">' . $meta_field['label'] . '</label>';
