@@ -15,6 +15,11 @@ foreach (glob(get_stylesheet_directory() . "/inc/modules/*.php") as $function) {
     require get_template_directory() . '/inc/modules/' . $function;
 }
 
+foreach (glob(get_stylesheet_directory() . "/inc/modules/render/*.php") as $function) {
+    $function= basename($function);
+    require get_template_directory() . '/inc/modules/render/' . $function;
+}
+
 
 foreach (glob(get_stylesheet_directory() . "/inc/template/*.php") as $function) {
     $function= basename($function);
