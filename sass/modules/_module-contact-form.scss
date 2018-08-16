@@ -1,0 +1,83 @@
+.module-contact-form {
+
+  background-color: #ffffff;
+  padding: 5% 0;
+
+  .contact-form {
+    margin-right: 25px;
+    .contact-form-title {
+      color: $SO_Orange_Neon;
+    }
+    hr {
+      border-top: 3px solid $SO_Grey_Dark;
+    }
+    .contact-form-shortcode {
+      label {
+        color: #000;
+        width: 100%;
+      }
+      input, textarea {
+        background-color: #e0e0e0;
+        border: 1px solid #e0e0e0;
+        padding: 15px;
+        margin-top: 10px;
+        width: 100%;
+      }
+      input[type="submit"] {
+        background-color: $SO_Orange_Neon;
+        color: white;
+        border: 1px solid $SO_Orange_Neon;
+        border-radius: 3px;
+        padding: 5px 20px;
+        width: auto;
+        &:hover {
+          background-color: $SO_Orange_Lite;
+          border: 1px solid $SO_Orange_Lite;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .contact-form-map {
+    .icon-map {
+      text-align: right;
+      .fa-map-marked-alt {
+        font-size: 55px;
+        color: $SO_Orange_Neon;
+      }
+    }
+    .content-top {
+      text-align: center;
+      color: $SO_Grey_Dark;
+    }
+  }
+
+  .contact-form-map-link {
+    iframe {
+      width: 100%;
+    }
+    padding: 35px 0;
+  }
+
+  .contact-form-address {
+    text-align: center;
+    .contact-form-address-mail {
+      color: $SO_Grey_Dark;
+    }
+    hr {
+      width: 80%;
+      border-top: 3px solid $SO_Grey_Dark;
+    }
+    .icon-form {
+      width:90%;
+      text-align: center;
+      margin:auto;
+      .fab {
+        color: $SO_Orange_Neon;
+        font-size: 40px;
+      }
+    }
+  }
+
+}
