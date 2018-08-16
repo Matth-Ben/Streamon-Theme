@@ -10,7 +10,7 @@ function bloc_contact_render( $content ) {
     $content_bloc = get_post_meta( get_the_ID(), 'content-bloc', true );
     $title_button = get_post_meta( get_the_ID(), 'title-button', true );
     $url_button = get_post_meta( get_the_ID(), 'url-button', true );
-    if ( ! is_single () ) {
+    if ( ! is_single () && get_page_template_slug() == 'tpl-projet.php' ) {
         $html .= <<<EOF
         <div class="container">
             <div class="row bloc-contact">
