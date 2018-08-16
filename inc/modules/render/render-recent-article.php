@@ -6,7 +6,7 @@
  * Time: 17:19
  */
 function mra_display_product( $content ) {
-    if ( ! is_single () ) {
+    if ( ! is_single () && get_page_template_slug() == 'tpl-projet.php' ) {
         if ( get_post_meta( get_the_ID(), 'display-article', true ) == 'on' ) {
             $terms = get_terms("category");
             foreach ( $terms as $term ) {

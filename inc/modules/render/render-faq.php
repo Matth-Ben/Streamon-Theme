@@ -10,7 +10,7 @@ function faq_render( $content ) {
     $content_bloc = get_post_meta( get_the_ID(), 'content-bloc-faq', true );
     $title_button = get_post_meta( get_the_ID(), 'title-button-faq', true );
     $url_button = get_post_meta( get_the_ID(), 'url-button-faq', true );
-    if ( ! is_single () ) {
+    if ( ! is_single () && get_page_template_slug() == 'tpl-contact.php' ) {
         $args = array(
             'posts_per_page'    => 4,
             'post_type'         => 'foire-aux-questions',
@@ -34,22 +34,23 @@ EOF;
         endforeach;
 
         $html .= <<<EOF
-        <div class="container">
-            <div class="faq">
-                <div class="faq-content">
-                    <h2 class="post-title">$title_bloc</h2>
-                    <hr>
-                    <p class='post-comment-count'>$content_bloc</p>
+        <div class="module-faq">
+            <div class="container">
+                <div class="faq">
+                    <div class="faq-content">
+                        <h2 class="post-title">$title_bloc</h2>
+                        <hr>
+                        <p class='post-comment-count'>$content_bloc</p>
+                    </div>
+                </div>    
+                <div class="faq-bloc row">
+                    $faq_bloc
                 </div>
-            </div>    
-            <div class="faq-bloc row">
-                $faq_bloc
-            </div>
-            <div class="faq-button">
-                <a href="$url_button">$title_button</a>
+                <div class="faq-button">
+                    <a href="$url_button">$title_button</a>
+                </div>
             </div>
         </div>
-        
 EOF;
         $content .= $html;
     }
