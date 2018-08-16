@@ -21,15 +21,15 @@ function faq_render( $content ) {
             $post_url = get_permalink($post->ID);
             $post_img = get_the_post_thumbnail_url($post->ID);
             $faq_bloc = <<<EOF
-            <div class="col-3">
-                <a href="$post_url">
+            <a href="$post_url" class="col-3">
+                <div class="faq-post-bloc">
                     <div class="faq-post-content" style="background-image: url($post_img);">
                         <h2 class="faq-post-title">$post->post_title</h2>
-                        <p class='faq-post-date'>$post->post_date</p>
+                        <!--<p class='faq-post-date'>$post->post_date</p>-->
                         <p class='faq-post-content'>$post->post_content</p>
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
 EOF;
         endforeach;
 
@@ -37,11 +37,8 @@ EOF;
         <div class="module-faq">
             <div class="container">
                 <div class="faq">
-                    <div class="faq-content">
-                        <h2 class="post-title">$title_bloc</h2>
-                        <hr>
-                        <p class='post-comment-count'>$content_bloc</p>
-                    </div>
+                    <h2 class="faq-title">$title_bloc</h2>
+                    <p class='faq-content'>$content_bloc</p>
                 </div>    
                 <div class="faq-bloc row">
                     $faq_bloc
