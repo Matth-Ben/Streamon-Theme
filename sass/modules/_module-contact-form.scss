@@ -64,6 +64,9 @@
     text-align: center;
     .contact-form-address-mail {
       color: $SO_Grey_Dark;
+      &:hover {
+        color: $SO_Orange_Neon;
+      }
     }
     hr {
       width: 80%;
@@ -76,6 +79,9 @@
       .fab {
         color: $SO_Orange_Neon;
         font-size: 40px;
+        &:hover {
+          color: $SO_Orange_Lite;
+        }
       }
     }
   }

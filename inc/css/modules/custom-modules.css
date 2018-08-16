@@ -77,3 +77,165 @@
   background-color: #FF6E33;
   color: #fff;
 }
+
+/* line 1, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form {
+  background-color: #ffffff;
+  padding: 5% 0;
+}
+/* line 6, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form {
+  margin-right: 25px;
+}
+/* line 8, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form .contact-form-title {
+  color: #F03C3C;
+}
+/* line 11, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form hr {
+  border-top: 3px solid #171717;
+}
+/* line 15, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form .contact-form-shortcode label {
+  color: #000;
+  width: 100%;
+}
+/* line 19, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form .contact-form-shortcode input, .module-contact-form .contact-form .contact-form-shortcode textarea {
+  background-color: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin-top: 10px;
+  width: 100%;
+}
+/* line 26, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form .contact-form-shortcode input[type="submit"] {
+  background-color: #F03C3C;
+  color: white;
+  border: 1px solid #F03C3C;
+  border-radius: 3px;
+  padding: 5px 20px;
+  width: auto;
+}
+/* line 33, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form .contact-form-shortcode input[type="submit"]:hover {
+  background-color: #FF6E33;
+  border: 1px solid #FF6E33;
+  cursor: pointer;
+}
+/* line 43, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-map .icon-map {
+  text-align: right;
+}
+/* line 45, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-map .icon-map .fa-map-marked-alt {
+  font-size: 55px;
+  color: #F03C3C;
+}
+/* line 50, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-map .content-top {
+  text-align: center;
+  color: #171717;
+}
+/* line 56, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-map-link {
+  padding: 35px 0;
+}
+/* line 57, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-map-link iframe {
+  width: 100%;
+}
+/* line 63, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address {
+  text-align: center;
+}
+/* line 65, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address .contact-form-address-mail {
+  color: #171717;
+}
+/* line 67, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address .contact-form-address-mail:hover {
+  color: #F03C3C;
+}
+/* line 71, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address hr {
+  width: 80%;
+  border-top: 3px solid #171717;
+}
+/* line 75, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address .icon-form {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+/* line 79, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address .icon-form .fab {
+  color: #F03C3C;
+  font-size: 40px;
+}
+/* line 82, ../../../sass/modules/_module-contact-form.scss */
+.module-contact-form .contact-form-address .icon-form .fab:hover {
+  color: #FF6E33;
+}
+
+/* line 1, ../../../sass/modules/_module-faq.scss */
+.question-contact {
+  background-color: #F03C3C;
+  padding: 7.5px 40px 7.5px 5px;
+}
+
+/* line 6, ../../../sass/modules/_module-faq.scss */
+.module-faq {
+  background-color: #383838;
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+/* line 10, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-title {
+  display: table;
+  border-bottom: 2px solid #1FDAF0;
+}
+/* line 14, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-content {
+  padding-top: 15px;
+}
+/* line 19, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a:hover {
+  text-decoration: none;
+}
+/* line 22, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a .faq-post-bloc {
+  border: 1px solid #1FDAF0;
+  background-color: rgba(161, 161, 161, 0.5);
+  text-align: center;
+  padding: 35px 30px;
+  max-height: 230px;
+  height: 230px;
+}
+/* line 30, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a .faq-post-bloc .faq-post-content .faq-post-title {
+  text-transform: uppercase;
+  color: #1FDAF0;
+}
+/* line 34, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a .faq-post-bloc .faq-post-content .faq-post-content {
+  color: #fff;
+  text-align: left;
+}
+/* line 39, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a .faq-post-bloc:hover {
+  background-color: rgba(161, 161, 161, 0.8);
+}
+/* line 45, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-button {
+  text-align: right;
+}
+/* line 47, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-button a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* line 50, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-button a:hover {
+  color: #1FDAF0;
+}
