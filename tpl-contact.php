@@ -20,7 +20,8 @@ Template Name: Contact - FAQ
             <h1 class="archive_title h2">
                 <?php the_title(); ?>
             </h1>
-            <hr class="title_highlight">
+<!--            <hr class="title_highlight">-->
+            <p class="question-contact">Une question ? Une recommendation ?</p>
         </div>
 
         <?php if ($phrase_contact != "") : ?>
