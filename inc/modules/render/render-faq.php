@@ -17,21 +17,7 @@ function faq_render( $content ) {
         );
         $posts = get_posts($args);
 
-        foreach($posts as $post):
-            $post_url = get_permalink($post->ID);
-            $post_img = get_the_post_thumbnail_url($post->ID);
-            $faq_bloc = <<<EOF
-            <a href="$post_url" class="col-3">
-                <div class="faq-post-bloc">
-                    <div class="faq-post-content" style="background-image: url($post_img);">
-                        <h2 class="faq-post-title">$post->post_title</h2>
-                        <!--<p class='faq-post-date'>$post->post_date</p>-->
-                        <p class='faq-post-content'>$post->post_content</p>
-                    </div>
-                </div>
-            </a>
-EOF;
-        endforeach;
+
 
         $html .= <<<EOF
         <div class="module-faq">
@@ -41,7 +27,26 @@ EOF;
                     <p class='faq-content'>$content_bloc</p>
                 </div>    
                 <div class="faq-bloc row">
-                    $faq_bloc
+EOF;
+
+        foreach($posts as $post):
+            $post_url = get_permalink($post->ID);
+            $post_img = get_the_post_thumbnail_url($post->ID);
+            $post_content = substr($post->post_content, 0, 100);
+            $html .= <<<EOF
+            <a href="$post_url" class="col-3">
+                <div class="faq-post-bloc">
+                    <div class="faq-post-content" style="background-image: url($post_img);">
+                        <h2 class="faq-post-title">$post->post_title</h2>
+                        <!--<p class='faq-post-date'>$post->post_date</p>-->
+                        <p class='post-content'>$post_content</p>
+                    </div>
+                </div>
+            </a>
+EOF;
+        endforeach;
+
+        $html .=<<<EOF
                 </div>
                 <div class="faq-button">
                     <a href="$url_button">$title_button</a>

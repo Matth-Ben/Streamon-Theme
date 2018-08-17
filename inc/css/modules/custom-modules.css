@@ -209,33 +209,36 @@
   background-color: rgba(161, 161, 161, 0.5);
   text-align: center;
   padding: 35px 30px;
-  max-height: 230px;
-  height: 230px;
+  max-height: 300px;
 }
-/* line 30, ../../../sass/modules/_module-faq.scss */
+/* line 29, ../../../sass/modules/_module-faq.scss */
 .module-faq .faq-bloc a .faq-post-bloc .faq-post-content .faq-post-title {
   text-transform: uppercase;
   color: #1FDAF0;
 }
-/* line 34, ../../../sass/modules/_module-faq.scss */
-.module-faq .faq-bloc a .faq-post-bloc .faq-post-content .faq-post-content {
+/* line 33, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a .faq-post-bloc .faq-post-content p.post-content {
   color: #fff;
   text-align: left;
 }
-/* line 39, ../../../sass/modules/_module-faq.scss */
+/* line 36, ../../../sass/modules/_module-faq.scss */
+.module-faq .faq-bloc a .faq-post-bloc .faq-post-content p.post-content:after {
+  content: '...';
+}
+/* line 41, ../../../sass/modules/_module-faq.scss */
 .module-faq .faq-bloc a .faq-post-bloc:hover {
   background-color: rgba(161, 161, 161, 0.8);
 }
-/* line 45, ../../../sass/modules/_module-faq.scss */
+/* line 47, ../../../sass/modules/_module-faq.scss */
 .module-faq .faq-button {
   text-align: right;
 }
-/* line 47, ../../../sass/modules/_module-faq.scss */
+/* line 49, ../../../sass/modules/_module-faq.scss */
 .module-faq .faq-button a {
   color: #fff;
   text-decoration: underline;
 }
-/* line 50, ../../../sass/modules/_module-faq.scss */
+/* line 52, ../../../sass/modules/_module-faq.scss */
 .module-faq .faq-button a:hover {
   color: #1FDAF0;
 }

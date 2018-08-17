@@ -24,16 +24,18 @@
         background-color: rgba(161,161,161,0.5);
         text-align: center;
         padding: 35px 30px;
-        max-height: 230px;
-        height: 230px;
+        max-height: 300px;
         .faq-post-content {
           .faq-post-title {
             text-transform: uppercase;
             color: $SO_Blue_Light;
           }
-          .faq-post-content {
+          p.post-content {
             color: #fff;
             text-align: left;
+            &:after {
+              content: '...';
+            }
           }
         }
         &:hover {
