@@ -242,3 +242,70 @@
 .module-faq .faq-button a:hover {
   color: #1FDAF0;
 }
+
+/* line 1, ../../../sass/modules/_module-partner.scss */
+.bloc-partner {
+  text-align: center;
+}
+/* line 3, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-content {
+  padding: 0;
+  max-height: 400px;
+  height: 400px;
+}
+/* line 7, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-content .partner-banner {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100%;
+}
+/* line 13, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-content .partner-banner .content-bloc-partner {
+  padding-bottom: 75px;
+}
+/* line 15, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-content .partner-banner .content-bloc-partner .partner-logo {
+  width: 250px;
+}
+/* line 18, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-content .partner-banner .content-bloc-partner .partner-temoignage {
+  color: #fff;
+  margin: auto;
+  width: 75%;
+  border-left: 2px solid #fff;
+}
+/* line 28, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-button {
+  position: relative;
+  top: -40px;
+  bottom: 40px;
+  margin: auto;
+  width: 700px;
+}
+/* line 34, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-button .partner-button-text {
+  color: #fff;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 15px 50px 10px;
+  background-image: linear-gradient(to right, #F03C3C, #FF6E33);
+  -webkit-clip-path: polygon(10% 10%, 90% 10%, 100% 100%, 0% 100%);
+  clip-path: polygon(10% 10%, 90% 10%, 97% 100%, 3% 100%);
+}
+/* line 44, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-button .partner-button-text-before {
+  -webkit-clip-path: polygon(49% 10%, 68% 10%, 40% 100%, 21% 100%);
+  clip-path: polygon(49% 10%, 68% 10%, 40% 100%, 21% 100%);
+  background-color: #F03C3C;
+  position: relative;
+}
+/* line 50, ../../../sass/modules/_module-partner.scss */
+.bloc-partner .partner-button .partner-button-text-after {
+  -webkit-clip-path: polygon(32% 10%, 51% 10%, 80% 100%, 60% 100%);
+  clip-path: polygon(32% 10%, 51% 10%, 80% 100%, 60% 100%);
+  background-color: #FF6E33;
+  position: relative;
+}
