@@ -31,7 +31,7 @@ function wpm_custom_post_faq() {
         'label'               => __( 'FAQ'),
         'description'         => __( 'Tous sur FAQ'),
         'labels'              => $labels,
-        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'comments', 'revisions', 'custom-fields', ),
+        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
         'hierarchical'        => false,
         'public'              => true,
         'has_archive'         => true,

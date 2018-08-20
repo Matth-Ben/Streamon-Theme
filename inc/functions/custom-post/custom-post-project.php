@@ -9,13 +9,9 @@
 function wpm_custom_post_project() {
 
     $labels = array(
-        // Le nom au pluriel
         'name'                => _x( 'Projets', 'Post Type General Name'),
-        // Le nom au singulier
         'singular_name'       => _x( 'Projet', 'Post Type Singular Name'),
-        // Le libellé affiché dans le menu
         'menu_name'           => __( 'Projets' ),
-        // Les différents libellés de l'administration
         'all_items'           => __( 'Toutes les projets'),
         'view_item'           => __( 'Voir les projets'),
         'add_new_item'        => __( 'Ajouter un nouveau projet'),

@@ -11,3 +11,8 @@ foreach (glob(get_stylesheet_directory() . "/inc/functions/custom-post/*.php") a
     $function= basename($function);
     require get_template_directory() . '/inc/functions/custom-post/' . $function;
 }
+
+
+    if (class_exists('MultiPostThumbnails')) {
+        MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
+    }
