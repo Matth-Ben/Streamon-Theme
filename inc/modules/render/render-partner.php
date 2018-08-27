@@ -17,7 +17,8 @@ function partner_render( $content ) {
         $posts = get_posts($args);
 
         $html .= <<<EOF
-            <div class="bloc-partner row">
+            <div class="bloc-partner container-fullwidth">
+            <div class="row">
 EOF;
 
         $count = 12/$number_partner;
@@ -44,6 +45,7 @@ EOF;
             <div class="partner-button-text-before col-2"></div>
             <a class="partner-button-text col-8" href="#">$sub_text</a>
             <div class="partner-button-text-after col-2"></div>
+        </div>
         </div>
     </div>
 EOF;
